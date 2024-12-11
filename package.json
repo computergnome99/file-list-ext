@@ -1,0 +1,26 @@
+{
+  "name": "@calvinbonner/file-list-ext",
+  "version": "0.0.1-beta.0",
+  "main": "dist/index.js",
+  "module": "index.ts",
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^15.11.7",
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "jsdelivr": {
+    "source": "src"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "bun build . --outdir ./dist --minify && tsc --emitDeclarationOnly",
+    "prepublishOnly": "bun run build"
+  },
+  "type": "module"
+}

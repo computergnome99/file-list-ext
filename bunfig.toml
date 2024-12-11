@@ -1,0 +1,14 @@
+[test]
+preload = "./tests/happydom.ts"
+
+[build]
+outdir = "dist"
+target = "esnext"
+minify = true
+sourcemap = true
+
+[tsconfig]
+source = "src"
+
+[package]
+entry = "src/index.ts"
