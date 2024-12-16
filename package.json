@@ -1,6 +1,6 @@
 {
   "name": "@calvinbonner/file-list-ext",
-  "version": "0.0.2-beta.1",
+  "version": "0.0.2-beta.2",
   "description": "A more flexible version of `FileList` which includes extra utilities for manipulating the list of contained files.",
   "author": "Calvin Bonner <me@calvinbonner.com>",
   "main": "index.js",
