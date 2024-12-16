@@ -58,3 +58,12 @@ To get started using `file-list-ext`, just install the package using your prefer
 ## Contributing
 
 Please feel free to open an issue on GitHub or create a PR. When running the source locally, you can run unit tests using `bun test` or `bun test --watch`.
+
+### To-Do
+
+The following are items on my To-Do list for this project. If you're looking to contribute, please check this list to see if what you need is already on here.
+
+- [x] JSDoc Coverage
+- [ ] Unit Test Coverage
+- [ ] Update mutating methods to avoid unnecessary array duplication (mutate in-place)
+- [ ] Require formatting prior to commit/publish
