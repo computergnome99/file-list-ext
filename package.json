@@ -1,6 +1,6 @@
 {
   "name": "@calvinbonner/file-list-ext",
-  "version": "0.0.0",
+  "version": "0.0.2-beta.1",
   "description": "A more flexible version of `FileList` which includes extra utilities for manipulating the list of contained files.",
   "author": "Calvin Bonner <me@calvinbonner.com>",
   "main": "index.js",
@@ -14,8 +14,9 @@
     "access": "public"
   },
   "scripts": {
-    "build": "bun ./bin",
-    "publish": "npx jsr publish && bun run build && cd ./dist && npm publish && cd ../",
+    "build:jsr": "bun ./bin/jsr-build",
+    "build:npm": "bun ./bin/npm-build",
+    "publish": "bun run build:jsr && npx jsr publish && bun run build:npm && cd ./dist && npm publish && cd ../",
     "prepublishOnly": "bun ./bin/publish-block"
   },
   "license": "MIT",
