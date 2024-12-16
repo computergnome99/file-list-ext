@@ -1,6 +1,17 @@
 {
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
   "name": "@calvinbonner/file-list-ext",
-  "version": "0.0.1",
+  "version": "0.0.2-beta.0",
   "license": "MIT",
-  "exports": "./index.ts"
+  "exports": "./index.ts",
+  "publish": {
+    "exclude": [
+      "./tests",
+      "./bin",
+      ".gitignore",
+      "bun.lockb",
+      "bunfig.toml",
+      "tsconfig.json"
+    ]
+  }
 }

@@ -276,7 +276,7 @@ export class FileListExt implements Iterable<File> {
    * });
    */
   forEach(
-    callbackfn: (file?: File, index?: number, array?: File[]) => void,
+    callbackfn: (file?: File, index?: number, array?: File[]) => void
   ): void {
     this.toArray().forEach(callbackfn);
   }
@@ -306,7 +306,7 @@ export class FileListExt implements Iterable<File> {
    * const altFilteredList = fileList.filter((file) => file.name.endswith('.txt'));
    */
   filter(
-    predicate: (file?: File, index?: number, array?: File[]) => boolean | void,
+    predicate: (file?: File, index?: number, array?: File[]) => boolean | void
   ): FileListExt {
     return FileListExt.fromArray(this.toArray().filter(predicate));
   }
@@ -328,7 +328,7 @@ export class FileListExt implements Iterable<File> {
    * const match = fileList.find((file) => file.name.endswith('.txt'));
    */
   find(
-    predicate: (file?: File, index?: number, array?: File[]) => boolean,
+    predicate: (file?: File, index?: number, array?: File[]) => boolean
   ): File | void {
     return this.toArray().find(predicate);
   }
