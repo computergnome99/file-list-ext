@@ -1,26 +1,21 @@
 {
   "name": "@calvinbonner/file-list-ext",
-  "version": "0.0.1-beta.3",
-  "main": "dist/index.js",
+  "version": "0.0.0",
+  "main": "index.js",
   "module": "index.ts",
   "devDependencies": {
     "@happy-dom/global-registrator": "^15.11.7",
     "@types/bun": "latest",
     "typescript": "^5.0.0"
   },
-  "files": [
-    "dist/*",
-    "README.md"
-  ],
-  "jsdelivr": {
-    "source": "src"
-  },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "bun build . --outdir ./dist --minify && tsc --emitDeclarationOnly",
-    "prepublishOnly": "bun run build"
+    "build": "bun ./bin",
+    "publish": "npx jsr publish && bun run build && cd ./dist && npm publish && cd ../",
+    "prepublishOnly": "bun ./bin/publish-block"
   },
+  "license": "MIT",
   "type": "module"
 }

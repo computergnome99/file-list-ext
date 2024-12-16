@@ -1,6 +1,6 @@
 {
   "name": "@calvinbonner/file-list-ext",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1-beta.5",
   "license": "MIT",
   "exports": "./index.ts"
 }
