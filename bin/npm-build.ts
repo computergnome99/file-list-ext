@@ -46,4 +46,4 @@ function build() {
   }
 }
 
-build();
+export { build };

@@ -30,4 +30,4 @@ function build() {
   writeJsrData(jsrData);
 }
 
-build();
+export { build };
