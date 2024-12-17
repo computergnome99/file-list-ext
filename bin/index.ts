@@ -7,9 +7,9 @@ function build() {
   child_process.execSync("npx jsr publish", { stdio: "inherit" });
 
   npmBuild();
-  child_process.execSync("cd ./dist", { stdio: "inherit" });
-  child_process.execSync("npm publish", { stdio: "inherit" });
-  child_process.execSync("cd ../", { stdio: "inherit" });
+  setTimeout(() => {
+    child_process.execSync("cd ./dist && npm publish", { stdio: "inherit" });
+  });
 }
 
 build();
