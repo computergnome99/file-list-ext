@@ -4,7 +4,7 @@ import child_process from "node:child_process";
 
 function build() {
   jsrBuild();
-  child_process.execSync("bun x jsr publish");
+  child_process.execSync("npx jsr publish");
 
   npmBuild();
   child_process.execSync("cd ./dist");
