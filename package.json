@@ -5,7 +5,10 @@
   "author": "Calvin Bonner <me@calvinbonner.com>",
   "main": "index.js",
   "module": "index.ts",
-  "repository": "https://github.com/computergnome99/file-list-ext",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/computergnome99/file-list-ext"
+  },
   "devDependencies": {
     "@happy-dom/global-registrator": "^15.11.7",
     "@types/bun": "latest",
