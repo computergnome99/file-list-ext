@@ -4,7 +4,7 @@ function build() {
   const packageData = getPackageData();
   const jsrData: { [key: string]: unknown } = {};
   const baseData = {
-    exports: "index.ts",
+    exports: "./index.ts",
     publish: {
       exclude: [
         "./tests",
