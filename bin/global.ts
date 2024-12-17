@@ -12,7 +12,7 @@ export const KEYS = {
     "license",
     "type",
   ],
-  JSR: ["name", "version"],
+  JSR: ["name", "version", "license"],
 } as const;
 
 export function checkDistDirectory(): string {
