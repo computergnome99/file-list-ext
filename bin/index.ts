@@ -4,12 +4,12 @@ import child_process from "node:child_process";
 
 function build() {
   jsrBuild();
-  child_process.execSync("npx jsr publish");
+  child_process.execSync("npx jsr publish", { stdio: "inherit" });
 
   npmBuild();
-  child_process.execSync("cd ./dist");
-  child_process.execSync("npm publish");
-  child_process.execSync("cd ../");
+  child_process.execSync("cd ./dist", { stdio: "inherit" });
+  child_process.execSync("npm publish", { stdio: "inherit" });
+  child_process.execSync("cd ../", { stdio: "inherit" });
 }
 
 build();
